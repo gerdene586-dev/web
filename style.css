@@ -1,0 +1,58 @@
+.main-title {
+    text-align: center;
+    color: darkblue;
+    font-size: 32 px;
+
+}
+
+.section-title {
+    color: darkgreen;
+
+    border-bottom: 2px solid darkgreen;
+
+    padding-bottom: 8px;
+}
+
+.form-input {
+    width: 300px;
+
+    padding: 10px;
+
+    margin-top: 5px;
+
+    border: 1px solid gray;
+
+    border-radius: 5px;
+
+}
+
+.submit-btn {
+
+    background-color: green;
+
+    color: white;
+
+    padding: 10px 20px;
+
+    border: none;
+
+    border-radius: 5px;
+
+    cursor: pointer;
+
+}
+.reset-btn {
+
+    background-color: gray;
+
+    color: white;
+
+    padding: 10px 20px;
+
+    border: none;
+
+    border-radius: 5px;
+
+    cursor: pointer;
+
+}

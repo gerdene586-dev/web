@@ -1,14 +1,18 @@
 <!DOCTYPE html>
 <html lang="mn">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Лаборатори 02: Хэрэглэгчийн анкет</title>
+    <link rel="stylesheet" href="style.css">
+
 </head>
+
 <body>
 
     <header>
-        <h1>Оюутны Бүртгэлийн Портал</h1>
+        <h1 class="main-title">юутны Бүртгэлийн Портал</h1>
         <nav>
             <ul>
                 <li><a href="../index.html">Нүүр</a></li>
@@ -27,21 +31,25 @@
                 <form action="#" method="POST" enctype="multipart/form-data">
                     <fieldset>
                         <legend>Хувийн мэдээлэл</legend>
-                        
+
                         <label for="fullname">Овог нэр:</label><br>
-                        <input type="text" id="fullname" name="fullname" placeholder="Н. Болдбаатар" required minlength="2"><br><br>
+                        <input class="form-input" type="text" id="fullname" name="fullname" placeholder="Н. Болдбаатар"
+                            required minlength="2"><br><br>
 
                         <label for="email">Цахим хаяг (Email):</label><br>
-                        <input type="email" id="email" name="email" placeholder="example@domain.com" required><br><br>
+                        <input class="form-input" type="email" id="email" name="email" placeholder="example@domain.com"
+                            required><br><br>
 
                         <label for="password">Нууц үг:</label><br>
-                        <input type="password" id="password" name="password" required minlength="6"><br><br>
+                        <input class="form-input" type="password" id="password" name="password" required
+                            minlength="6"><br><br>
 
                         <label for="phone">Утасны дугаар:</label><br>
-                        <input type="tel" id="phone" name="phone" pattern="[0-9]{8}" placeholder="881112233" required><br><br>
+                        <input class="form-input" type="tel" id="phone" name="phone" pattern="[0-9]{8}"
+                            placeholder="881112233" required><br><br>
 
                         <label for="dob">Төрсөн огноо:</label><br>
-                        <input type="date" id="dob" name="dob" required><br><br>
+                        <input class="form-input" type="date" id="dob" name="dob" required><br><br>
 
                         <label>Хүйс:</label><br>
                         <input type="radio" id="male" name="gender" value="male">
@@ -55,7 +63,7 @@
                         <legend>Боловсрол ба Сонирхол</legend>
 
                         <label for="degree">Суралцаж буй түвшин:</label><br>
-                        <select id="degree" name="degree" required>
+                        <select class="form-input" id="degree" name="degree" required>
                             <option value="">-- Сонгоно уу --</option>
                             <option value="bachelor">Бакалавр</option>
                             <option value="master">Магистр</option>
@@ -74,18 +82,21 @@
                         <input type="file" id="avatar" name="avatar" accept="image/*"><br><br>
 
                         <label for="bio">Товч танилцуулга / Өөрийн тухай:</label><br>
-                        <textarea id="bio" name="bio" rows="4" cols="50" placeholder="Өөрийн танилцуулгыг энд бичнэ үү..."></textarea><br>
+                        <textarea class="form-input"
+                        id="bio" name="bio" rows="4" cols="50"
+                            placeholder="Өөрийн танилцуулгыг энд бичнэ үү..."></textarea><br>
                     </fieldset>
                     <br>
 
-                    <button type="submit">Анкет Илгээх</button>
-                    <button type="reset">Дахин эхлүүлэх</button>
+                    <button class="submit-btn" type="submit">Анкет Илгээх</button>
+                    <button class="reset-btn"
+                    type="reset">Дахин эхлүүлэх</button>
                 </form>
             </section>
         </article>
 
         <section>
-            <h2>Миний сонирхол</h2>
+            <h2>class="section-title" Миний сонирхол</h2>
             <ul>
                 <li>Веб хөгжүүлэлт</li>
                 <li>Фото зураг авах</li>
@@ -94,7 +105,7 @@
         </section>
 
         <section>
-            <h2>Миний дүн</h2>
+            <h2>class="section-title" Миний дүн</h2>
             <table>
                 <thead>
                     <tr>
@@ -125,4 +136,5 @@
     </footer>
 
 </body>
+
 </html>
